@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google!</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            background-image: url("/web/19981202230410im_/http://www.google.com/alpha.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #EEEEEE; /* Renk eski Google sayfasından */
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #DDDDDD;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 20px;
+            background-color: #EEEEEE;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .menu-column {
+            width: 30%;
+            text-align: center;
+        }
+
+        .menu-column a {
+            display: block;
+            margin: 5px 0;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .menu-column a:hover {
+            color: #0056b3;
+        }
+
+        .special-searches {
+            background-color: #7EE5DA; /* Orijinal renk */
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .info-links {
+            background-color: #70CCC2; /* Orijinal renk */
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .subscribe {
+            background-color: #62B3AA; /* Orijinal renk */
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .subscribe input[type="text"] {
+            width: 80%;
+            padding: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="google.jpg" alt="Google!" class="logo">
+
+    <div class="search-container">
+        <form method="GET" action="/web/19981202230410/http://www.google.com/search">
+            <input type="text" name="q" placeholder="Search the web">
+            <input type="submit" value="Google Search">
+            <input type="submit" name="sa" value="I'm feeling lucky">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="menu-column special-searches">
+            <h3>Special Searches</h3>
+            <a href="/web/19981202230410/http://www.google.com/stanford">Stanford Search</a>
+            <a href="/web/19981202230410/http://www.google.com/linux">Linux Search</a>
+        </div>
+        <div class="menu-column info-links">
+            <h3>Google Info</h3>
+            <a href="help.html">Help!</a>
+            <a href="about.html">About Google!</a>
+            <a href="company.html">Company Info</a>
+            <a href="stickers.html">Google! Logos</a>
+        </div>
+        <div class="menu-column subscribe">
+            <h3>Get Google! Updates</h3>
+            <form method="GET" action="https://web.archive.org/web/19981202230410/http://www.findmail.com/cgi-bin/subscribe.py">
+                <input type="hidden" name="listname" value="google-friends">
+                <input type="text" name="emailaddr" placeholder="Your e-mail">
+                <input type="submit" name="SubmitAction" value="Subscribe">
+                <br>
+                <a href="https://web.archive.org/web/19981202230410/http://www.findmail.com/list/google-friends/">Archive</a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 1998 Google Inc.</p>
+    </footer>
+
+</body>
+</html>
